@@ -1,0 +1,128 @@
+.footer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem 8rem;
+    background-color: #000;
+}
+
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer .quickNav {
+    display: flex;
+    gap: 1.5rem;
+    height: 13rem;
+}
+
+.footer .quickNav .quickLinks {
+    color: var(--gray);
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer .quickNav .quickLinks .phone {
+    display: flex;
+    gap: .5rem;
+    font-size: 1.2rem;
+    align-items: center;
+    text-decoration: none;
+    color: var(--green);
+}
+
+.footer .quickNav .quickLinks .link {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.footer .quickNav .quickLinks .link:hover {
+    color: var(--green);
+}
+
+.footer .catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 13rem;
+}
+
+.footer .catalog .socialLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer .catalog .socialLinks a {
+    text-decoration: none;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    font-size: 1.3rem;
+    padding: .5rem;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .catalog .download {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .8rem 1rem;
+    background-color: var(--green);
+    width: fit-content;
+    text-decoration: none;
+    color: #fff;
+    border-radius: .5rem;
+    font-size: .8rem;
+}
+
+.footer .terms {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    font-size: .75rem;
+    color: var(--gray);
+}
+
+@media(width<=820px) {
+    .footer {
+        padding: 4rem 2rem;
+    }
+
+    .footerContent {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .footer .quickNav {
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+    }
+
+    .footer .catalog {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        height: auto;
+    }
+}
+
+@media(width<=540px) {
+    .footer {
+        padding: 2rem;
+    }
+
+    .footer .terms p:first-child {
+        font-size: .5rem;
+    }
+}

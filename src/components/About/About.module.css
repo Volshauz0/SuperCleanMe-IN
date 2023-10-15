@@ -1,0 +1,141 @@
+.about {
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.about .leftBox {
+    width: 70%;
+}
+
+.about .leftBox h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.about .leftBox p {
+    color: var(--gray);
+}
+
+.about .leftBox .imgContainer {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.about .leftBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about .rightBox {
+    width: 30%;
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about .rightBox .card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    color: var(--gray);
+    font-size: .8rem;
+    height: 12rem;
+    line-height: 1rem;
+}
+
+.about .rightBox .card b {
+    color: #000;
+    font-size: .9rem;
+}
+
+.about .rightBox .greencard {
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    min-height: 12rem;
+    max-height: fit-content;
+    font-size: .8rem;
+    background-color: #4AAB3D;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.about .rightBox .greencard b {
+    font-size: 1.1rem;
+}
+
+.about .rightBox .greencard img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media(width<=1240px) {
+    .about .leftBox h1 {
+        font-size: 2rem;
+    }
+
+    .about .leftBox p {
+        font-size: .9rem;
+    }
+
+    .about .leftBox {
+        width: 60%;
+    }
+
+    .about .rightBox {
+        width: 40%;
+    }
+
+    .about .rightBox .card {
+        font-size: .7rem;
+    }
+
+    .about .rightBox .card img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media(width<=820px){
+    .about {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about .leftBox {
+        width: 100%;
+    }
+
+    .about .rightBox {
+        width: 100%;
+    }
+
+    .about .rightBox .card {
+        font-size: .8rem;
+    }
+
+    .about .rightBox .card img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
