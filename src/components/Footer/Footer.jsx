@@ -6,7 +6,7 @@ import { BiLogoInstagramAlt } from 'react-icons/bi'
 import { AiFillTwitterCircle } from 'react-icons/ai'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { BsFillPinMapFill } from 'react-icons/bs'
-import download from '../../assets/download.png'
+import download from './assets/download.png'
 
 export default function Footer() {
     return (

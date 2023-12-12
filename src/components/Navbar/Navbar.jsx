@@ -1,8 +1,8 @@
 import styles from './Navbar.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../../assets/logo.png'
-import next from '../../assets/next.png'
+import logo from './assets/logo.png'
+import next from './assets/next.png'
 
 export default function Navbar() {
   return (
