@@ -1,19 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 @font-face {
-  font-family: 'neueMontreal-regular';
-  src: url('../fonts/NeueMontreal-Regular.otf') format('opentype');
+  font-family: 'NeueMontreal-Regular';
+  src: url('/fonts/NeueMontreal-Regular.otf') format('opentype');
   font-weight: 400;
-  font-style: normal
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'neueMontreal-bold';
-  src: url('../fonts/NeueMontreal-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal
+  font-family: 'NeueMontreal-Medium';
+  src: url('/fonts/NeueMontreal-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: url('/fonts/NeueMontreal-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
 
 :root {
   --gray: #707070;
@@ -33,13 +40,16 @@
   background-color: #4aab3d;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+
 
 html,
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "NeueMontreal-Regular";
 }

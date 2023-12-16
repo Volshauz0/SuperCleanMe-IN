@@ -86,6 +86,19 @@
     width: 2.5rem;
 }
 
+@media(width<=820px) {
+
+    .hero .p1,
+    .hero .p3 {
+        display: none;
+    }
+
+    .hero .p2 {
+        width: 40%;
+        left: 5%;
+    }
+}
+
 @media(width<=568px) {
     .hero .tagline {
         padding: 1rem;
@@ -95,24 +108,6 @@
 
     .hero p {
         font-size: .8rem;
-    }
-
-    .hero .p1 {
-        width: 80%;
-        top: 15%;
-        left: 15%;
-        transform: translate(-15%, -15%);
-    }
-
-    .hero .p2 {
-        display: none;
-    }
-
-    .hero .p3 {
-        bottom: 25%;
-        transform: translate(0, -25%);
-        right: 0;
-        width: 60%;
     }
 
     .hero .label {
