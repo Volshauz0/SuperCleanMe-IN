@@ -1,0 +1,117 @@
+.TabContent {
+    display: flex;
+}
+
+.sideTab {
+    width: 17%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .3s ease-in-out;
+}
+
+.side {
+    padding: 1.2rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.TabProducts {
+    width: 83%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-left: 1px solid #ccc;
+}
+
+.ProductsHead {
+    padding: 6rem 1rem;
+}
+
+.ProductsHead .head {
+    font-size: 3rem;
+}
+
+.ProductsHead .desc {
+    letter-spacing: .3px;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.TabItems {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.TabItems .card {
+    box-shadow: 0 0 10px rgb(74, 171, 61, .2);
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.TabItems .card:hover {
+    box-shadow: 0 0 10px rgb(74, 171, 61, .5);
+}
+
+.TabItems .card .cardImage {
+    width: 17rem;
+    height: 17rem;
+    object-fit: contain;
+}
+
+.TabItems .card .cardCode {
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+@media(width<=1024px) {
+    .sideTab {
+        width: 20%;
+    }
+
+    .TabProducts {
+        width: 80%;
+    }
+}
+
+@media(width<=820px) {
+    .TabContent {
+        flex-direction: column;
+    }
+
+    .sideTab {
+        padding-top: 4.8rem;
+        width: 100%;
+        height: fit-content;
+        justify-content: start;
+        overflow-x: scroll;
+        flex-direction: row;
+        font-weight: bold;
+    }
+
+    .sideTab::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .TabProducts {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ProductsHead {
+        padding: 2rem 1rem;
+    }
+
+    .TabItems .card .cardImage {
+        width: 20rem;
+        height: 20rem;
+    }
+}
