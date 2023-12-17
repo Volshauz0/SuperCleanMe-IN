@@ -110,6 +110,11 @@
         font-size: .8rem;
     }
 
+    .hero .p2 {
+        width: 50%;
+        bottom: 20%;
+    }
+
     .hero .label {
         right: 5%;
         top: 35%;
@@ -132,5 +137,16 @@
     .hero .more .arrow {
         height: 1.5rem;
         width: 1.5rem;
+    }
+}
+
+@media(width<376px){
+    .hero .label{
+        top: 20%;
+    }
+
+    .hero .p2 {
+        width: 60%;
+        bottom: 23%;
     }
 }

@@ -1,24 +1,86 @@
-import styles from './Navbar.module.css'
-import Link from 'next/link'
-import Image from 'next/image'
-import logo from './assets/logo.png'
-import next from './assets/next.png'
+'use client'
+
+
+// Navbar.jsx
+import { useState, useEffect } from 'react';
+import styles from './Navbar.module.css';
+import Link from 'next/link';
+import Image from 'next/image';
+import logo from './assets/logo.png';
+import next from './assets/next.png';
 
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 150;
+      setIsScrolled(scrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  const navbarClass = `${styles.navbar} ${isScrolled ? styles.scrolled : ''}`;
+
   return (
     <nav className={styles.nav}>
-      <div className={styles.navbar}>
-        <div className={styles.link}>
-          <Link className={styles.home} style={{color:"#fff"}} href="/">Home</Link>
-          <Link href="#">Markets</Link>
-          <Link href="#">Services</Link>
+
+      <div className={navbarClass}>
+        {/* Responsive menu icon */}
+        <div className={`${styles.menuIcon} ${isMobileMenuOpen ? styles.open : ''}`} onClick={handleMobileMenuToggle}>
+          <div className={styles.bar} />
+          <div className={styles.bar} />
+          <div className={styles.bar} />
         </div>
-        <Link className={styles.logo} href="/"><Image src={logo} /></Link>
-        <div className={styles.link}>
-          <Link href="/Products">Products</Link>
-          <Link className={styles.query} style={{color:"#fff"}} href="#">Have any query <Image src={next} alt="next" /> </Link>
+
+        {/* Navigation links */}
+
+        <Link className={styles.logoo} href="/">
+          <Image src={logo} />
+        </Link>
+
+        <div className={`${styles.links} ${isMobileMenuOpen ? styles.open : ''}`}>
+          <div className={styles.linkBlocks}>
+            <Link className={styles.home} href="/" onClick={closeMobileMenu}>
+              Home
+            </Link>
+            <Link href="/industry" onClick={closeMobileMenu}>
+              Industry
+            </Link>
+            <Link href="/services" onClick={closeMobileMenu}>
+              Services
+            </Link>
+          </div>
+
+          <Link className={styles.logo} href="/">
+            <Image src={logo} />
+          </Link>
+
+          <div className={styles.linkBlocks}>
+            <Link href="/products" onClick={closeMobileMenu}>
+              Products
+            </Link>
+            <Link className={styles.query} style={{ color: "#fff" }} href="/contact" onClick={closeMobileMenu}>
+              Have any query <Image src={next} alt="next" />
+            </Link>
+          </div>
         </div>
       </div>
+
     </nav>
-  )
+  );
 }

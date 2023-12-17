@@ -27,11 +27,11 @@ export default function Footer() {
                     </div>
                     <div className={styles.quickLinks}>
                         <h4 style={{ color: "#fff" }}>Company</h4>
-                        <Link className={styles.link} href="#">About Us</Link>
-                        <Link className={styles.link} href="#">Products</Link>
-                        <Link className={styles.link} href="#">Services</Link>
-                        <Link className={styles.link} href="#">Markets</Link>
-                        <Link className={styles.link} href="#">Contact Us</Link>
+                        <Link className={styles.link} href="/about">About Us</Link>
+                        <Link className={styles.link} href="/products">Products</Link>
+                        <Link className={styles.link} href="/services">Services</Link>
+                        <Link className={styles.link} href="/industrialServed">Industry</Link>
+                        <Link className={styles.link} href="/contact">Contact Us</Link>
                     </div>
                 </div>
                 <div className={styles.catalog}>

@@ -20,7 +20,11 @@ const TabComponent = ({ tabs }) => {
                     <span
                         className={styles.side}
                         key={i}
-                        style={{ background: index === i ? '#A8EA9F' : '#fff' }}
+                        style={{
+                            background: index === i ? '#A8EA9F' : '#fff',
+                            borderTop: index === i ? '1px solid #A8EA9F' : '1px solid #E5E5E5',
+                            borderLeft: index === i ? '1px solid #A8EA9F' : '1px solid #E5E5E5',
+                        }}
                         onClick={() => handleTabClick(i)}
                     >
                         {tab.name}
