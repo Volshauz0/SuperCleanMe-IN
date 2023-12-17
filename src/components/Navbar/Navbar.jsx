@@ -58,10 +58,10 @@ export default function Navbar() {
             <Link className={styles.home} href="/" onClick={closeMobileMenu}>
               Home
             </Link>
-            <Link href="/industry" onClick={closeMobileMenu}>
+            <Link className={styles.Link} href="/industry" onClick={closeMobileMenu}>
               Industry
             </Link>
-            <Link href="/services" onClick={closeMobileMenu}>
+            <Link className={styles.Link} href="/services" onClick={closeMobileMenu}>
               Services
             </Link>
           </div>
@@ -71,7 +71,7 @@ export default function Navbar() {
           </Link>
 
           <div className={styles.linkBlocks}>
-            <Link href="/products" onClick={closeMobileMenu}>
+            <Link className={styles.Link} href="/products" onClick={closeMobileMenu}>
               Products
             </Link>
             <Link className={styles.query} style={{ color: "#fff" }} href="/contact" onClick={closeMobileMenu}>
