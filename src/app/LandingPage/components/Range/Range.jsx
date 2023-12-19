@@ -28,7 +28,7 @@ export default function Range() {
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                         standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
                 </div>
-                <Link href="/products" className={styles.explore}>
+                <Link href="/Products" className={styles.explore}>
                     Explore All Range
                     <Image src={n2} alt="arrowBtn" />
                 </Link>
@@ -37,7 +37,7 @@ export default function Range() {
             <div className={styles.slider}>
 
                 <div className={styles.view}>
-                    <Link href='/products'>All Products</Link>
+                    <Link href='/Products'>All Products</Link>
                 </div>
 
                 <Swiper
