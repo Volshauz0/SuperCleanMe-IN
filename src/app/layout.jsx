@@ -1,6 +1,7 @@
 import './globals.css'
 import Footer from '@/components/Footer/Footer'
 import Navbar from '@/components/Navbar/Navbar'
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: 'SuperCleanMe-IN',
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
