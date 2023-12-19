@@ -1,9 +1,10 @@
 import styles from './Hero.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 import p1 from '../../assets/p1.png'
 import p3 from '../../assets/p3.png'
 import label from '../../assets/white-labeling.png'
-import arrow from '../../assets/arrow.png'
+import { BsChevronCompactDown } from "react-icons/bs";
 
 export default function Hero() {
     return (
@@ -24,12 +25,14 @@ export default function Hero() {
             <h1 className={styles.tagline}>Crafting Excellence, <br />
                 Tailored for Your Brand
             </h1>
-            <div className={styles.more}>
+            <Link href="#range" className={styles.more}>
                 Explore More
-                <span classname={styles.chev}>
-                    <Image src={arrow} className={styles.arrow} />
+                <span className={styles.chev}>
+                    <BsChevronCompactDown className={styles.arrow} />
+                    <BsChevronCompactDown className={styles.arrow} />
+                    <BsChevronCompactDown className={styles.arrow} />
                 </span>
-            </div>
+            </Link>
         </div>
     )
 }

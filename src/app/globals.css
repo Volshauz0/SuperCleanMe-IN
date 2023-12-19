@@ -52,4 +52,5 @@
 html,
 body {
   font-family: "NeueMontreal-Regular";
+  scroll-padding-top: 4rem;
 }

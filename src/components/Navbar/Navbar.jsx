@@ -15,7 +15,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrolled = window.scrollY > 150;
+      const scrolled = window.scrollY > 50;
       setIsScrolled(scrolled);
     };
 
@@ -61,8 +61,8 @@ export default function Navbar() {
             <Link className={styles.Link} href="/industry" onClick={closeMobileMenu}>
               Industry
             </Link>
-            <Link className={styles.Link} href="/services" onClick={closeMobileMenu}>
-              Services
+            <Link className={styles.Link} href="/about" onClick={closeMobileMenu}>
+              About
             </Link>
           </div>
 
@@ -71,6 +71,9 @@ export default function Navbar() {
           </Link>
 
           <div className={styles.linkBlocks}>
+            <Link className={styles.Link} href="/services" onClick={closeMobileMenu}>
+              Services
+            </Link>
             <Link className={styles.Link} href="/products" onClick={closeMobileMenu}>
               Products
             </Link>
