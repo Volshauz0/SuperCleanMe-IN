@@ -80,7 +80,7 @@
     }
 
     .range .slider .view a{
-        left: -1.3rem;
+        left: -1.5rem;
     }
 }
 
@@ -98,5 +98,9 @@
 @media(width<=569px) {
     .range .title .head h1 {
         font-size: 2rem;
+    }
+
+    .range .slider .view {
+        width: 10%;
     }
 }
