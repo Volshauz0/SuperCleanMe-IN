@@ -48,6 +48,7 @@
     width: 50%;
     padding: 0 2rem 0 0;
     font-size: 1.1rem;
+    color: #5c5c5c;
 }
 
 .aboutOther {
@@ -74,6 +75,7 @@
 .aboutManuf {
     padding: 2rem 2rem 4rem;
     font-size: 1.1rem;
+    color: #5c5c5c;
 }
 
 @media(width<=820px) {

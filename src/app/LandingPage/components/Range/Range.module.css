@@ -57,7 +57,7 @@
 .range .slider .view {
     background-color: var(--green);
     width: 5%;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .range .slider .view a {

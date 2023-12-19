@@ -1,0 +1,89 @@
+.industrial {
+    padding: 4rem 0;
+    letter-spacing: .3px;
+    line-height: 1.3;
+    font-size: 1.1rem;
+}
+
+.industrial .header {
+    width: 55%;
+    padding: 6rem 4rem;
+}
+
+.industrial .header p{
+    color: #5c5c5c;
+}
+
+.industrial .header h1 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.industrial .bg {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    padding: 0 4rem;
+}
+
+.industrial .content {
+    padding: 4rem;
+    color: #5c5c5c;
+}
+
+.industrial .content .download {
+    border: 1px solid var(--green);
+    border-radius: .5rem;
+    padding: 2rem;
+    float: right;
+    margin: 1rem;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.industrial .content .download a {
+    color: var(--green);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+@media(width<=820px) {
+    .industrial .header {
+        width: 100%;
+    }
+
+    .industrial .bg {
+        height: 25rem;
+        padding: 0 2rem;
+    }
+
+    .industrial .content {
+        padding: 4rem 2rem;
+    }
+
+    .industrial .content .download {
+        margin: 1rem 0;
+        float: none;
+    }
+}
+
+@media(width<=640px) {
+    .industrial .header {
+        padding: 6rem 1rem;
+    }
+
+    .industrial .bg {
+        height: 25rem;
+        padding: 0 1rem;
+    }
+
+    .industrial .content {
+        padding: 3rem 1rem;
+    }
+}

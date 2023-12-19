@@ -54,3 +54,64 @@ body {
   font-family: "NeueMontreal-Regular";
   scroll-padding-top: 4rem;
 }
+
+.notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  background-image: url('../../public/notfound.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 1rem;
+}
+
+.notFound h1 {
+  font-size: 3rem;
+  font-family: 'NeueMontreal-Bold';
+}
+
+.notFound p {
+  font-size: 1.3rem;
+  width: 50%;
+}
+
+.notFound .btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.notFound .btns a {
+  text-decoration: none;
+  color: black;
+  background-color: #ffffff;
+  border: 1px solid #4aab3d;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  transition: all .3s ease-in-out;
+}
+
+.notFound .btns a:hover {
+  background-color: #4aab3d;
+  color: white;
+}
+
+@media(width<=500px) {
+
+  .notFound h1 {
+    font-size: 2.5rem;
+  }
+
+  .notFound p {
+    width: 90%;
+  }
+
+  .notFound .btns a {
+    padding: .8rem 1.5rem;
+  }
+}

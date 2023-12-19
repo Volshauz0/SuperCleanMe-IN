@@ -160,6 +160,7 @@
         top: 35%;
         height: 18rem;
         width: 18rem;
+        display: none;
     }
 
     .hero .more {

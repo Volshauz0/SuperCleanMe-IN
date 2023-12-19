@@ -58,7 +58,7 @@ export default function Navbar() {
             <Link className={styles.home} href="/" onClick={closeMobileMenu}>
               Home
             </Link>
-            <Link className={styles.Link} href="/industry" onClick={closeMobileMenu}>
+            <Link className={styles.Link} href="/industrialServed" onClick={closeMobileMenu}>
               Industry
             </Link>
             <Link className={styles.Link} href="/about" onClick={closeMobileMenu}>
