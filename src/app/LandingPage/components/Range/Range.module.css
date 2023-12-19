@@ -79,7 +79,7 @@
         width: 70%;
     }
 
-    .range .slider .view {
+    .range .slider .view a{
         left: -1.3rem;
     }
 }

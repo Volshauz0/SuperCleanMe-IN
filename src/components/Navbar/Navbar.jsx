@@ -74,7 +74,7 @@ export default function Navbar() {
             <Link className={styles.Link} href="/services" onClick={closeMobileMenu}>
               Services
             </Link>
-            <Link className={styles.Link} href="/products" onClick={closeMobileMenu}>
+            <Link className={styles.Link} href="/Products" onClick={closeMobileMenu}>
               Products
             </Link>
             <Link className={styles.query} style={{ color: "#fff" }} href="/contact" onClick={closeMobileMenu}>
