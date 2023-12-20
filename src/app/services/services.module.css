@@ -7,11 +7,18 @@
 
 .services .header {
     padding: 10rem 4rem 6rem;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#4aab3d55, #4aab3d);
 }
 
 .services .header h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: .8rem;
+}
+
+.services .header p {
+    font-size: 1.3rem;
 }
 
 .services .content {
