@@ -1,3 +1,5 @@
+'use client'
+
 import styles from './Footer.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -7,10 +9,18 @@ import { AiFillTwitterCircle } from 'react-icons/ai'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { BsFillPinMapFill } from 'react-icons/bs'
 import download from './assets/download.png'
+import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Footer() {
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
     return (
         <footer className={styles.footer}>
+            <FiArrowUpRight className={styles.upArrow} onClick={scrollToTop} />
             <div className={styles.footerContent}>
                 <div className={styles.quickNav}>
                     <div className={styles.quickLinks}>

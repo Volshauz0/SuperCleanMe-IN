@@ -1,10 +1,29 @@
 .footer {
+    position: relative;
     height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 4rem 8rem;
     background-color: #000;
+}
+
+.upArrow {
+    position: absolute;
+    top: -1.5rem;
+    right: 2rem;
+    border-radius: .8rem;
+    color: var(--green);
+    background-color: #fff;
+    padding: .4rem;
+    font-size: 3rem;
+    rotate: -45deg;
+    transition: scale .2s ease-in-out;
+    border: 1px solid var(--green);
+}
+
+.upArrow:hover {
+    scale: 1.1;
 }
 
 .footerContent {
