@@ -14,11 +14,14 @@ export default function Form() {
                         <div className={styles.contact}>
                             <div className={styles.social}>
                                 <Image src={next} />
-                                <p>+91 1234567890</p>
+                                <a style={{ color: '#fff', textDecoration: 'none' }} href='tel:8943353554'>+91 8943353554</a>
                             </div>
                             <div className={styles.social}>
                                 <Image src={next} />
-                                <p>Address Details</p>
+                                <p>Super Middle East Marketing (India) <br />
+                                    Private LimitedP.B. No.2, Thrissur, <br />
+                                    Pin: 680655 - kerala, India
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -37,6 +40,9 @@ export default function Form() {
                     </form>
                 </div>
             </div>
+            <p className={styles.callFast}>Receive within 3-5 days when you fill out the form on this page, or give us a call &nbsp;
+                <a style={{ color: '#000' }} href='tel:8943353554'><b>+91 8943353554</b></a>
+            </p>
         </div>
     )
 }

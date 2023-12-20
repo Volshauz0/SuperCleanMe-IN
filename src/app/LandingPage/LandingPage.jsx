@@ -5,7 +5,6 @@ import Range from "./components/Range/Range";
 import Whitelabel from "./components/Whitelabel/Whitelabel";
 import Form from "./components/Form/Form";
 
-
 export default function LandingPage() {
   return (
     <main className={styles.main}>

@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 2rem 0;
     position: relative;
     top: .1rem;
@@ -109,6 +110,15 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+
+.form .callFast {
+    text-align: center;
+    padding-top: 2rem;
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: .3px;
+    padding: 1rem;
 }
 
 @media(width<=1280px) {
