@@ -57,3 +57,13 @@
     background-color: var(--green);
     color: #fff;
 }
+
+@media(width<768px) {
+    .swiper {
+        width: 100%;
+    }
+
+    .viewMore {
+        margin: 0 1rem;
+    }
+}

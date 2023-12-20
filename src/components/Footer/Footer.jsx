@@ -17,12 +17,12 @@ export default function Footer() {
                         <h4 style={{ color: "#fff" }}>Quick Contact</h4>
                         <p>If you have any questions or need help, feel <br />
                             free to contact with our team.</p>
-                        <a href="tel:+12 345 67890" className={styles.phone}> <BsFillTelephoneFill /> 12 345 67890</a>
+                        <a href="tel:+12 345 67890" className={styles.phone}> <BsFillTelephoneFill /> 8943353554</a>
                         <p>Super Middle East Marketing (India) <br />
                             Private LimitedP.B. No.2, Thrissur, <br />
                             Pin: 680655 - kerala, India
                         </p>
-                        <a href="" style={{ color: "#fff", fontSize: "1.2rem", textDecoration: "none" }}>
+                        <a href="https://maps.app.goo.gl/fhL57kh5koqyZTzL7" style={{ color: "#fff", fontSize: "1.2rem", textDecoration: "none" }}>
                             <BsFillPinMapFill />  Get Directions</a>
                     </div>
                     <div className={styles.quickLinks}>

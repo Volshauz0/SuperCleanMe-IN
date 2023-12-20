@@ -2,8 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from './Whitelabel.module.css'
 import next from '../../assets/next.png'
-import pdt from '../../assets/pdt.png'
-import plate from '../../assets/plate.png'
+import pdt from '../../assets/pdt.webp'
+import plate from '../../assets/plate.webp'
 import c1 from '../../assets/c1.png'
 import c2 from '../../assets/c2.png'
 import c3 from '../../assets/c3.png'
@@ -20,7 +20,7 @@ export default function Whitelabel() {
                     <p>Our skilled team collaborates closely with you to create tailored
                         cleaning solutions that align with your brand's ethos and requirements.
                     </p>
-                    <Link href="#" className={styles.more}>
+                    <Link href="/services" className={styles.more}>
                         Explore More
                         <Image src={next} />
                     </Link>

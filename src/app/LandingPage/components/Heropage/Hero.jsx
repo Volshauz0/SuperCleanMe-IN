@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import p1 from '../../assets/p1.png'
 import p3 from '../../assets/p3.png'
-import label from '../../assets/white-labeling.png'
+import label from '../../assets/white-labeling.webp'
 import { BsChevronCompactDown } from "react-icons/bs";
 
 export default function Hero() {
