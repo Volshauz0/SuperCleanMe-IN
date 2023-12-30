@@ -18,8 +18,7 @@ export default function Home() {
         <h1>Website in Progress</h1>
         <p>Check back soon!</p>
         <h3>If you have any query</h3>
-        <p>contact us at <a href="mailto:info@supercleanmeind.com">info@supercleanmeind.com</a></p>
-        <p>Phone no: <a href="tel:8943353554">8943353554</a></p>
+        <p>contact us at <a href="mailto:info@supercleanind.com">info@supercleanind.com</a></p>
       </div>
 
     </main>
