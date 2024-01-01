@@ -5,15 +5,27 @@
     justify-content: center;
     gap: 2rem;
     background-color: #e5e5f7;
-    background-image: radial-gradient(#9affa1 0.75px, transparent 0.75px), radial-gradient(#2da135 0.75px, #e5e5f7 0.75px);
+    background-image: radial-gradient(#8f8f8f 0.75px, transparent 0.75px), radial-gradient(#8f8f8f 0.75px, #e5e5f7 0.75px);
     background-size: 30px 30px;
     background-position: 0 0, 15px 15px;
+}
+
+.main .image {
+    width: 15rem;
+    text-align: center;
+}
+
+.main .image b {
+    letter-spacing: .5px;
+    font-size: .9rem;
+    color: #2E3192;
 }
 
 .logo {
     width: 15rem;
     height: fit-content;
     object-fit: contain;
+    margin-bottom: .5rem;
 }
 
 .main h1 {

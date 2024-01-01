@@ -7,13 +7,16 @@ export default function Home() {
   return (
     <main className={styles.main}>
       {/* <LandingPage /> */}
-      <Image
-        src='/Logo.png'
-        alt="under construction"
-        width={500}
-        height={500}
-        className={styles.logo}
-      />
+      <div className={styles.image}>
+        <Image
+          src='/Logo.png'
+          alt="under construction"
+          width={500}
+          height={500}
+          className={styles.logo}
+        />
+        <b>SUPER MIDDLE EAST CHEMICAL & CLG MAT LLC</b>
+      </div>
       <div>
         <h1>Website in Progress</h1>
         <p>Check back soon!</p>
